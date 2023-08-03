@@ -1,14 +1,34 @@
 # Minimal C++ to WebAssembly example
 
-Goals:
-
 - No build system. Just a bash script.
-- No emscripten. 
+- No Emscripten. 
 - No external dependencies. 100% self contained. Including the compiler and web server (Mac only for now).
 - Zero setup (tradeoff: Mac only for now).
 - Stripped down to the bare minimum. Every line of code has a purpose.
 
 There are a few precedents (listed below) but didn't find any that ticks all the boxes above.
+
+## Usage
+
+There are no dependencies but in order to download the binaries you need to [configure git with lfs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
+
+Gives permission to the compiler, linker and web server binaries to run in your system (bin folder).
+
+```sh
+./setup.sh
+```
+
+Compiles and links C++ code to WASM
+
+```sh
+./build.sh
+```
+
+Starts a local Web server so you can run the code. Open in your browser http://localhost:8080 
+
+```sh
+./start.sh
+```
 
 ## Compiler
 
