@@ -46,7 +46,7 @@ https://github.com/schellingb/wajic
 
 ## Tools
 
-I found interesting and sometime useful (for debugging) looking at the text representation of WASM.
-With the link below you can easily convert the wasm binary file ot human readable text.
+Looking at the text representation of WASM is educational and sometimes useful for debugging.
+With the link below you can easily convert the wasm binary file to human readable text.
 
 https://webassembly.github.io/wabt/demo/wasm2wat/
